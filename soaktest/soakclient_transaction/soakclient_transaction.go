@@ -26,7 +26,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/confluentinc/confluent-kafka-go/soaktest"
+	"github.com/olli-ai/confluent-kafka-go/soaktest"
 
 	"github.com/olli-ai/confluent-kafka-go/kafka"
 )

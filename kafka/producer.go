@@ -478,13 +478,13 @@ func NewProducer(conf *ConfigMap) (*Producer, error) {
 	if err != nil {
 		return nil, err
 	}
-	eventsChanSize := v.(int)
+	// eventsChanSize := v.(int)
 
 	v, err = confCopy.extract("go.produce.channel.size", 1000000)
 	if err != nil {
 		return nil, err
 	}
-	produceChannelSize := v.(int)
+	// produceChannelSize := v.(int)
 
 	logsChanEnable, logsChan, err := confCopy.extractLogConfig()
 	if err != nil {

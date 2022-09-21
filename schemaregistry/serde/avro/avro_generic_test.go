@@ -20,9 +20,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/test"
+	"github.com/olli-ai/confluent-kafka-go/schemaregistry"
+	"github.com/olli-ai/confluent-kafka-go/schemaregistry/serde"
+	"github.com/olli-ai/confluent-kafka-go/schemaregistry/test"
 )
 
 func testMessageFactoryGeneric(subject string, name string) (interface{}, error) {
