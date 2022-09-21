@@ -28,7 +28,7 @@ import (
 
 	"github.com/confluentinc/confluent-kafka-go/soaktest"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 const endToEnd = "end.to.end."

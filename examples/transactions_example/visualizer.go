@@ -28,8 +28,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/gdamore/tcell"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 // Height and width (terminal characters) per intersection frame.

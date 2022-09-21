@@ -20,7 +20,7 @@ package main
 import (
 	"os"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 func main() {

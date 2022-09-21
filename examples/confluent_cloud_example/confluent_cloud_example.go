@@ -29,10 +29,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde/avro"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 // In order to set the constants below, you are going to need

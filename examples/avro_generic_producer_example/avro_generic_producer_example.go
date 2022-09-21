@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
 	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde/avro"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 func main() {

@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go/kafka"
 )
 
 // createTransactionalProducer creates a transactional producer for the given

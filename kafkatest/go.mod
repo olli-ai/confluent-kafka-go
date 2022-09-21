@@ -1,4 +1,4 @@
-module github.com/confluentinc/confluent-kafka-go/kafkatest
+module github.com/olli-ai/confluent-kafka-go/kafkatest
 
 go 1.13
 
