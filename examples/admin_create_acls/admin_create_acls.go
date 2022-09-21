@@ -23,7 +23,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 // Parses a list of 7n arguments to a slice of n ACLBinding

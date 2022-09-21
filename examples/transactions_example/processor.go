@@ -27,7 +27,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 // The processor's consumer group id.

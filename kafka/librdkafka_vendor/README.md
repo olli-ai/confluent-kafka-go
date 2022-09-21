@@ -1,11 +1,11 @@
 # Bundling prebuilt librdkafka
 
-confluent-kafka-go bundles prebuilt statically linked
+confluent-kafka-go2 bundles prebuilt statically linked
 versions of librdkafka for the following platforms:
 
- * MacOSX x64      (aka Darwin)
- * Linux glibc x64 (Ubuntu, CentOS, etc)
- * Linux musl x64  (Alpine)
+- MacOSX x64 (aka Darwin)
+- Linux glibc x64 (Ubuntu, CentOS, etc)
+- Linux musl x64 (Alpine)
 
 ## Import static librdkafka bundle
 
@@ -20,5 +20,5 @@ and then finally merged (make sure to merge it, DO NOT squash or rebase).
     $ ./import.sh ~/path/to/librdkafka-static-bundle-v1.4.0.tgz
 
 This will copy the static library and the rdkafka.h header file
-to this directory, as well as generate a new ../build_..go file
+to this directory, as well as generate a new ../build\_..go file
 for this platform + variant.

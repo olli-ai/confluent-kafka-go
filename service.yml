@@ -1,10 +1,10 @@
-name: confluent-kafka-go
+name: confluent-kafka-go2
 lang: go
 lang_version: 1.18
 git:
   enable: true
 github:
   enable: true
-  repo_name: olli-ai/confluent-kafka-go
+  repo_name: olli-ai/confluent-kafka-go2
 semaphore:
   enable: true

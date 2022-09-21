@@ -14,7 +14,7 @@ Checklist
 =========
 Please provide the following information:
 
- - [ ] confluent-kafka-go and librdkafka version (`LibraryVersion()`):
+ - [ ] confluent-kafka-go2 and librdkafka version (`LibraryVersion()`):
  - [ ] Apache Kafka broker version:
  - [ ] Client configuration: `ConfigMap{...}`
  - [ ] Operating system:

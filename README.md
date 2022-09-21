@@ -1,11 +1,11 @@
 # Confluent's Golang Client for Apache Kafka<sup>TM</sup>
 
-**confluent-kafka-go** is Confluent's Golang client for [Apache Kafka](http://kafka.apache.org/) and the
+**confluent-kafka-go2** is Confluent's Golang client for [Apache Kafka](http://kafka.apache.org/) and the
 [Confluent Platform](https://www.confluent.io/product/compare/).
 
 Features:
 
-- **High performance** - confluent-kafka-go is a lightweight wrapper around
+- **High performance** - confluent-kafka-go2 is a lightweight wrapper around
   [librdkafka](https://github.com/edenhill/librdkafka), a finely tuned C
   client.
 
@@ -25,7 +25,7 @@ Features:
 The Golang bindings provides a high-level Producer and Consumer with support
 for the balanced consumer groups of Apache Kafka 0.9 and above.
 
-See the [API documentation](http://docs.confluent.io/current/clients/confluent-kafka-go/index.html) for more information.
+See the [API documentation](http://docs.confluent.io/current/clients/confluent-kafka-go2/index.html) for more information.
 
 For a step-by-step guide on using the client see [Getting Started with Apache Kafka and Golang](https://developer.confluent.io/get-started/go/).
 
@@ -36,7 +36,7 @@ High-level balanced consumer
 ```golang
 import (
 	"fmt"
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 func main() {
@@ -72,7 +72,7 @@ Producer
 ```golang
 import (
 	"fmt"
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 func main() {
@@ -123,12 +123,12 @@ Supports Go 1.11+ and librdkafka 1.9.0+.
 ## Using Go Modules
 
 Starting with Go 1.13, you can use [Go Modules](https://blog.golang.org/using-go-modules) to install
-confluent-kafka-go.
+confluent-kafka-go2.
 
 Import the `kafka` package from GitHub in your code:
 
 ```golang
-import "github.com/olli-ai/confluent-kafka-go/kafka"
+import "github.com/olli-ai/confluent-kafka-go2/kafka"
 ```
 
 Build your project:
@@ -143,7 +143,7 @@ If you are building for Alpine Linux (musl), `-tags musl` must be specified.
 go build -tags musl ./...
 ```
 
-A dependency to the latest stable version of confluent-kafka-go should be automatically added to
+A dependency to the latest stable version of confluent-kafka-go2 should be automatically added to
 your `go.mod` file.
 
 ## Install the client
@@ -151,13 +151,13 @@ your `go.mod` file.
 Manual install:
 
 ```bash
-go get -u github.com/olli-ai/confluent-kafka-go/kafka
+go get -u github.com/olli-ai/confluent-kafka-go2/kafka
 ```
 
 Golang import:
 
 ```golang
-import "github.com/olli-ai/confluent-kafka-go/kafka"
+import "github.com/olli-ai/confluent-kafka-go2/kafka"
 ```
 
 ## librdkafka
@@ -192,7 +192,7 @@ manually on the build and target system using one of the following alternatives:
 - For Redhat based distros, install `librdkafka-devel` using [Confluent's YUM repository](http://docs.confluent.io/current/installation.html#rpm-packages-via-yum).
 - For MacOS X, install `librdkafka` from Homebrew. You may also need to brew install pkg-config if you don't already have it: `brew install librdkafka pkg-config`.
 - For Alpine: `apk add librdkafka-dev pkgconf`
-- confluent-kafka-go is not supported on Windows.
+- confluent-kafka-go2 is not supported on Windows.
 - For source builds, see instructions below.
 
 Build from source:
@@ -209,7 +209,7 @@ with `-tags dynamic`.
 **Note:** If you use the `master` branch of the Go client, then you need to use
 the `master` branch of librdkafka.
 
-**confluent-kafka-go requires librdkafka v1.9.0 or later.**
+**confluent-kafka-go2 requires librdkafka v1.9.0 or later.**
 
 # API Strands
 
@@ -241,7 +241,7 @@ See [examples/producer_example](examples/producer_example)
 [Apache License v2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 KAFKA is a registered trademark of The Apache Software Foundation and has been licensed for use
-by confluent-kafka-go. confluent-kafka-go has no affiliation with and is not endorsed by The Apache
+by confluent-kafka-go2. confluent-kafka-go2 has no affiliation with and is not endorsed by The Apache
 Software Foundation.
 
 # Developer Notes

@@ -26,7 +26,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 func main() {

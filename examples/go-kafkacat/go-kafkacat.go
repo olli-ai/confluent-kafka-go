@@ -26,7 +26,7 @@ import (
 	"syscall"
 
 	"github.com/alecthomas/kingpin"
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 var (
@@ -209,7 +209,7 @@ func main() {
 	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
 
 	_, libver := kafka.LibraryVersion()
-	kingpin.Version(fmt.Sprintf("confluent-kafka-go (librdkafka v%s)", libver))
+	kingpin.Version(fmt.Sprintf("confluent-kafka-go2 (librdkafka v%s)", libver))
 
 	// Default config
 	var confargs configArgs

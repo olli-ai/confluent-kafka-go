@@ -1,4 +1,4 @@
-# Information for confluent-kafka-go developers
+# Information for confluent-kafka-go2 developers
 
 Whenever librdkafka error codes are updated make sure to run generate
 before building:
@@ -8,9 +8,6 @@ before building:
   $ go build ./...
 ```
 
-
-
-
 ## Testing
 
 Some of the tests included in this directory, the benchmark and integration tests in particular,
@@ -18,6 +15,7 @@ require an existing Kafka cluster and a testconf.json configuration file to
 provide tests with bootstrap brokers, topic name, etc.
 
 The format of testconf.json is a JSON object:
+
 ```
 {
   "Brokers": "<bootstrap-brokers>",
@@ -27,40 +25,39 @@ The format of testconf.json is a JSON object:
 
 See testconf-example.json for an example and full set of available options.
 
-
 To run unit-tests:
+
 ```
 $ go test
 ```
 
 To run benchmark tests:
+
 ```
 $ go test -bench .
 ```
 
 For the code coverage:
+
 ```
 $ go test -coverprofile=coverage.out -bench=.
 $ go tool cover -func=coverage.out
 ```
-
 
 ## Build tags
 
 Different build types are supported through Go build tags (`-tags ..`),
 these tags should be specified on the **application** build/get/install command.
 
- * By default the bundled platform-specific static build of librdkafka will
-   be used. This works out of the box on Mac OSX and glibc-based Linux distros,
-   such as Ubuntu and CentOS.
- * `-tags musl` - must be specified when building on/for musl-based Linux
-   distros, such as Alpine. Will use the bundled static musl build of
-   librdkafka.
- * `-tags dynamic` - link librdkafka dynamically. A shared librdkafka library
-   must be installed manually through other means (apt-get, yum, build from
-   source, etc).
-
-
+- By default the bundled platform-specific static build of librdkafka will
+  be used. This works out of the box on Mac OSX and glibc-based Linux distros,
+  such as Ubuntu and CentOS.
+- `-tags musl` - must be specified when building on/for musl-based Linux
+  distros, such as Alpine. Will use the bundled static musl build of
+  librdkafka.
+- `-tags dynamic` - link librdkafka dynamically. A shared librdkafka library
+  must be installed manually through other means (apt-get, yum, build from
+  source, etc).
 
 ## Release process
 
@@ -72,7 +69,6 @@ For each release candidate and final release, perform the following steps:
 
 See instructions in [kafka/librdkafka/README.md](kafka/librdkafka/README.md).
 
-
 ### Update librdkafka version requirement
 
 Update the minimum required librdkafka version in `kafka/00version.go`
@@ -82,12 +78,10 @@ and `README.md` and the version in `examples/go.mod` and `mk/doc-gen.py`.
 
 Error codes can be automatically generated from the current librdkafka version.
 
-
 Update generated error codes:
 
     $ make -f mk/Makefile generr
     # Verify by building
-
 
 ## Generating HTML documentation
 
@@ -101,12 +95,10 @@ $ pip install beautifulsoup4
 $ make -f mk/Makefile docs
 ```
 
-
 ### Rebuild everything
 
     $ go clean -i ./...
     $ go build ./...
-
 
 ### Run full test suite
 
@@ -119,7 +111,6 @@ Run test suite:
 
     $ go test ./...
 
-
 ### Verify examples
 
 Manually verify that the examples/ applications work.
@@ -130,13 +121,11 @@ Also make sure the examples in README.md work.
 
 Make sure to push to github before creating the tag to have CI tests pass.
 
-
 ### Create and push tag
 
     $ git tag v1.3.0
     $ git push --dry-run origin v1.3.0
     # Remove --dry-run and re-execute if it looks ok.
-
 
 ### Create release notes page on github
 

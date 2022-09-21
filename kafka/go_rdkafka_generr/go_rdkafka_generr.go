@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-// confluent-kafka-go internal tool to generate error constants from librdkafka
+// confluent-kafka-go2 internal tool to generate error constants from librdkafka
 package main
 
 import (
 	"os"
 
-	"github.com/olli-ai/confluent-kafka-go/kafka"
+	"github.com/olli-ai/confluent-kafka-go2/kafka"
 )
 
 func main() {

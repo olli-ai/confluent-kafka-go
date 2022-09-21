@@ -16,7 +16,7 @@
 
 package jsonschema
 
-import "github.com/olli-ai/confluent-kafka-go/schemaregistry/serde"
+import "github.com/olli-ai/confluent-kafka-go2/schemaregistry/serde"
 
 // SerializerConfig is used to pass multiple configuration options to the serializers.
 type SerializerConfig struct {

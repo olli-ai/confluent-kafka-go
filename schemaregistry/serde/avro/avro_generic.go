@@ -23,8 +23,8 @@ import (
 	"github.com/actgardner/gogen-avro/v10/parser"
 	"github.com/actgardner/gogen-avro/v10/schema"
 	"github.com/heetch/avro"
-	"github.com/olli-ai/confluent-kafka-go/schemaregistry"
-	"github.com/olli-ai/confluent-kafka-go/schemaregistry/serde"
+	"github.com/olli-ai/confluent-kafka-go2/schemaregistry"
+	"github.com/olli-ai/confluent-kafka-go2/schemaregistry/serde"
 )
 
 // GenericSerializer represents a generic Avro serializer

@@ -1,4 +1,4 @@
-module github.com/olli-ai/confluent-kafka-go
+module github.com/olli-ai/confluent-kafka-go2
 
 go 1.13
 

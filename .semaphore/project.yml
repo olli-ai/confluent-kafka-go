@@ -1,12 +1,12 @@
 apiVersion: v1alpha
 kind: Project
 metadata:
-  name: confluent-kafka-go
+  name: confluent-kafka-go2
   description: ""
 spec:
   visibility: private
   repository:
-    url: git@github.com:olli-ai/confluent-kafka-go.git
+    url: git@github.com:olli-ai/confluent-kafka-go2.git
     run_on:
       - branches
       - tags
