@@ -520,8 +520,8 @@ func NewProducer(conf *ConfigMap) (*Producer, error) {
 	p.handle.p = p
 	p.handle.setup()
 	p.handle.rkq = C.rd_kafka_queue_get_main(p.handle.rk)
-	p.events = make(chan Event, eventsChanSize)
-	p.produceChannel = make(chan *Message, produceChannelSize)
+	// p.events = make(chan Event, eventsChanSize)
+	// p.produceChannel = make(chan *Message, produceChannelSize)
 	p.pollerTermChan = make(chan bool)
 
 	if logsChanEnable {
