@@ -6,18 +6,18 @@ metadata:
 spec:
   visibility: private
   repository:
-    url: git@github.com:confluentinc/confluent-kafka-go.git
+    url: git@github.com:olli-ai/confluent-kafka-go.git
     run_on:
-    - branches
-    - tags
-    - pull_requests
+      - branches
+      - tags
+      - pull_requests
     pipeline_file: .semaphore/semaphore.yml
     integration_type: github_app
     status:
       pipeline_files:
-      - path: .semaphore/semaphore.yml
-        level: pipeline
+        - path: .semaphore/semaphore.yml
+          level: pipeline
     whitelist:
       branches:
-      - master
-      - "/^v\\d+\\.\\d+\\.x$/"
+        - master
+        - "/^v\\d+\\.\\d+\\.x$/"
